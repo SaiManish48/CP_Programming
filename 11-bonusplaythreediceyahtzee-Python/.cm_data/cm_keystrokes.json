@@ -1,0 +1,60 @@
+{
+    "bonusplaythreediceyahtzee.py": [
+        {
+            "operation": "TYPED",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Wed Aug 11 2021 19:58:41",
+            "keyStrokeInfo": "\r\n",
+            "position": "40,1"
+        },
+        {
+            "operation": "PASTE",
+            "lines": 39,
+            "keyStrokeTimeStamp": "Wed Aug 11 2021 19:58:41",
+            "keyStrokeInfo": "def playstep2(hand, dice):\r\n\t# your code goes here\r\n\ta=str(hand)\r\n\tb=str(dice)\r\n\trepeat=''\r\n\tfor i in a:\r\n\t\tif(a.count(i)==1):\r\n\t\t\tcontinue\r\n\t\telse:\r\n\t\t\trepeat+=i\r\n\tif(repeat==''):\r\n\t\th=max(a)\r\n\t\th+=b[-2:]\r\n\t\t\r\n\t\th=list(h)\r\n\t\th.sort(reverse=True)\r\n\t\th=\"\".join(h)\r\n\t\tif(b[0:-2]==''):\r\n\t\t\tn=0\r\n\t\telse:\r\n\t\t\tn=int(b[0:-2])\r\n\t\treturn (int(h),n)\r\n\telse:\r\n\t\textra=''\r\n\t\tfor i in a:\r\n\t\t\tif(i in repeat):\r\n\t\t\t\tcontinue\r\n\t\t\telse:\r\n\t\t\t\textra+=i\r\n\t\tr=len(extra)\r\n\t\tans=repeat+b[-len(extra):]\r\n\t\tans=list(ans)\r\n\t\tans.sort(reverse=True)\r\n\t\tans=\"\".join(ans)\r\n\t\tif(b[0:-len(extra)]==''):\r\n\t\t\tn=0\r\n\t\telse:\r\n\t\t\tn=int(b[0:-len(extra)])\r\n\t\treturn(int(ans),n)\r\n",
+            "position": "41,1"
+        },
+        {
+            "operation": "TYPED",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Wed Aug 11 2021 19:58:41",
+            "keyStrokeInfo": "    ",
+            "position": "42,1"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Wed Aug 11 2021 19:59:20",
+            "keyStrokeInfo": "",
+            "position": "84,5"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Wed Aug 11 2021 19:59:20",
+            "keyStrokeInfo": "",
+            "position": "84,4"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Wed Aug 11 2021 19:59:21",
+            "keyStrokeInfo": "",
+            "position": "84,3"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Wed Aug 11 2021 19:59:21",
+            "keyStrokeInfo": "",
+            "position": "84,2"
+        },
+        {
+            "operation": "PASTE",
+            "lines": 28,
+            "keyStrokeTimeStamp": "Wed Aug 11 2021 19:59:21",
+            "keyStrokeInfo": "dice=str(dice)\r\n\ta_freq={}\r\n\ta=dice[-3:]\r\n\tif(a.count(a[0])==len(a)):\r\n\t\tsummation=20+int(a[0])*3\r\n\t\treturn((int(a),summation))\r\n\tb=dice[:-3]\r\n\tresult=playstep2(a,b)\r\n\tfinal=playstep2(result[0],result[1])\r\n\tfinal1=final[0]\r\n\tfinal1=str(final1)\r\n\t\r\n\tfor i in final1:\r\n\t\tif(i in a_freq):\r\n\t\t\ta_freq[i]+=1\r\n\t\telse:\r\n\t\t\ta_freq[i]=1\r\n\tmaximum=max(a_freq.values())\r\n\r\n\tif(maximum==1):\r\n\t\treturn(int(final1),int(max(final1)))\r\n\telif(maximum==2):\r\n\t\tkeys = [k for k, v in a_freq.items() if v == maximum]\r\n\t\ttwo=10+int(keys[0])*maximum\r\n\t\treturn(int(final1),two)\r\n\telse:\r\n\t\ttwo=20+int(final1[0])*3\r\n\t\treturn(int(final1),two)\r\n",
+            "position": "84,2"
+        }
+    ]
+}

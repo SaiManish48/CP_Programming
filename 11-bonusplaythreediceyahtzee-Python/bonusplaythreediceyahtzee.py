@@ -38,7 +38,75 @@
 # assert(bonusPlayThreeDiceYahtzee(2333413) == (333, 29))
 # assert(bonusPlayThreeDiceYahtzee(2333555) == (555, 35))
 
+def playstep2(hand, dice):
+    	# your code goes here
+	a=str(hand)
+	b=str(dice)
+	repeat=''
+	for i in a:
+		if(a.count(i)==1):
+			continue
+		else:
+			repeat+=i
+	if(repeat==''):
+		h=max(a)
+		h+=b[-2:]
+		
+		h=list(h)
+		h.sort(reverse=True)
+		h="".join(h)
+		if(b[0:-2]==''):
+			n=0
+		else:
+			n=int(b[0:-2])
+		return (int(h),n)
+	else:
+		extra=''
+		for i in a:
+			if(i in repeat):
+				continue
+			else:
+				extra+=i
+		r=len(extra)
+		ans=repeat+b[-len(extra):]
+		ans=list(ans)
+		ans.sort(reverse=True)
+		ans="".join(ans)
+		if(b[0:-len(extra)]==''):
+			n=0
+		else:
+			n=int(b[0:-len(extra)])
+		return(int(ans),n)
+
 
 def bonusplaythreediceyahtzee(dice):
 	# Your code goes here
-	pass
+	dice=str(dice)
+	a_freq={}
+	a=dice[-3:]
+	if(a.count(a[0])==len(a)):
+		summation=20+int(a[0])*3
+		return((int(a),summation))
+	b=dice[:-3]
+	result=playstep2(a,b)
+	final=playstep2(result[0],result[1])
+	final1=final[0]
+	final1=str(final1)
+	
+	for i in final1:
+		if(i in a_freq):
+			a_freq[i]+=1
+		else:
+			a_freq[i]=1
+	maximum=max(a_freq.values())
+
+	if(maximum==1):
+		return(int(final1),int(max(final1)))
+	elif(maximum==2):
+		keys = [k for k, v in a_freq.items() if v == maximum]
+		two=10+int(keys[0])*maximum
+		return(int(final1),two)
+	else:
+		two=20+int(final1[0])*3
+		return(int(final1),two)
+
