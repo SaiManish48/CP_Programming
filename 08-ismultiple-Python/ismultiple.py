@@ -13,7 +13,7 @@ def fun_ismultiple(m, n):
 		else:
 			return False
 
-m=(input())
-n=(input())
-print(fun_ismultiple(int(m),int(n)))
+# m=(input())
+# n=(input())
+# print(fun_ismultiple(int(m),int(n)))
 	
