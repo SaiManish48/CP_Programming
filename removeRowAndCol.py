@@ -23,6 +23,21 @@
 
 def removeRowAndCol(L, row, col):
     # Your code goes here...
-    pass
-
+    if(row<0 or col<0 or row>len(L) or col>len(L) or len(L)==0):
+        return None
+    else:
+        n=0
+        del(L[row])
+        while(n<len(L)):
+            del(L[n][col])
+            n +=1
+        return L
 # Write your own test cases.
+# print(removeRowAndCol([[1,3,7,5],[8,7,3,1],[9,8,4,3]],1,0))
+    
+assert(removeRowAndCol([[1,3,7,5],[8,7,3,1],[9,8,4,3]],1,0)==[[3,7,5],[8,4,3]])
+assert(removeRowAndCol([[2,3,4,5],[8,7,6,5],[0,1,2,3]],1,2)==[[2,3,5],[0,1,3]])
+assert(removeRowAndCol([[2,3,4,5],[8,7,6,5],[0,1,2,3]],0,-2)==None)
+assert(removeRowAndCol([[2,3,4,5],[8,7,6,5],[0,1,2,3]],6,2)==None)
+assert(removeRowAndCol([],1,2)==None)
+print("All test cases are passed")
