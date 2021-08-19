@@ -9,4 +9,9 @@
 
 def numberofpoolballs(rows):
 	# Your code goes here
-	pass
+	s=0
+	for i in range(1,rows+1):
+		s +=i
+	return s
+
+# print(numberofpoolballs(1000))
