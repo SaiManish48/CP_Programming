@@ -9,5 +9,24 @@
 
 import math
 
+def kaprekar(n):
+    y=n**2
+    i=0
+    sum=0
+    while(y>0):
+        rem=y%10
+        y=y//10
+        sum=sum+(rem*pow(10,i))
+        if(sum!=0 and y+sum==n):
+            return True
+        i+=1
+    return False
+
 def fun_nth_kaprekarnumber(n):
-    return 1;
+    fnd=0
+    guess=0
+    while(fnd<=n):
+        guess +=1
+        if(kaprekar(guess)):
+            fnd +=1
+    return guess
