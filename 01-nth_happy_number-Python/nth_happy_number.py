@@ -14,6 +14,33 @@
 # assert(nth_happy_number(7) == 28)
 # assert(nth_happy_number(8) == 31)
 
+def sumofsquares(n):
+        sumofsquare=0
+        while(n):
+                sumofsquare=sumofsquare+((n%10)*(n%10))
+                n=int(n/10)
+        return sumofsquare
 
+def ishappynumber(n):
+  start=n
+  stop=n
+  while(True):
+    start=sumofsquares(start)
+    stop=sumofsquares(sumofsquares(stop))
+    if(start!=stop):
+      continue
+    else:
+      break
+  if(start==1):
+    return True
+  else:
+    return False
+  
 def nth_happy_number(n):
-	return 0
+  found=1
+  got=0
+  while(found<=n):
+    if(ishappynumber(got)):
+      found+=1
+    got+=1
+  return got-1
