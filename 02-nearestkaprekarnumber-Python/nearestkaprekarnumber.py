@@ -12,5 +12,28 @@
 
 import math
 
+def kaprekar(n):
+    y=n**2
+    i=0
+    sum=0
+    while(y>0):
+        rem=y%10
+        y=y//10
+        sum=sum+(rem*pow(10,i))
+        if(sum!=0 and y+sum==n):
+            return True
+        i+=1
+    return False
+
 def fun_nearestkaprekarnumber(n):
-    return 1
+    count=1
+    if(kaprekar(n)):
+        return n
+    while(True):
+        a=n+count
+        b=n-count
+        if(kaprekar(b)):
+            return b
+        elif(kaprekar(a)):
+            return a
+        count+=1
