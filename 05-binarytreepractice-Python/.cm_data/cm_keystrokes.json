@@ -1,0 +1,200 @@
+{
+    "binarytree.py": [
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Sun Aug 22 2021 23:45:42",
+            "keyStrokeInfo": "",
+            "position": "16,12"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Sun Aug 22 2021 23:45:42",
+            "keyStrokeInfo": "",
+            "position": "16,11"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Sun Aug 22 2021 23:45:42",
+            "keyStrokeInfo": "",
+            "position": "16,10"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Sun Aug 22 2021 23:45:42",
+            "keyStrokeInfo": "",
+            "position": "16,9"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Sun Aug 22 2021 23:45:42",
+            "keyStrokeInfo": "",
+            "position": "16,5"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Sun Aug 22 2021 23:45:43",
+            "keyStrokeInfo": "",
+            "position": "16,1"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 1,
+            "keyStrokeTimeStamp": "Sun Aug 22 2021 23:45:43",
+            "keyStrokeInfo": "",
+            "position": "15,30"
+        },
+        {
+            "operation": "PASTE",
+            "lines": 1,
+            "keyStrokeTimeStamp": "Sun Aug 22 2021 23:45:44",
+            "keyStrokeInfo": "\r\n        ",
+            "position": "15,30"
+        },
+        {
+            "operation": "PASTE",
+            "lines": 1,
+            "keyStrokeTimeStamp": "Sun Aug 22 2021 23:45:45",
+            "keyStrokeInfo": "return self.preorder_search(self.root, find_val)",
+            "position": "16,9"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Sun Aug 22 2021 23:45:56",
+            "keyStrokeInfo": "",
+            "position": "22,12"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Sun Aug 22 2021 23:45:56",
+            "keyStrokeInfo": "",
+            "position": "22,11"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Sun Aug 22 2021 23:45:56",
+            "keyStrokeInfo": "",
+            "position": "22,10"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Sun Aug 22 2021 23:45:56",
+            "keyStrokeInfo": "",
+            "position": "22,9"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Sun Aug 22 2021 23:45:56",
+            "keyStrokeInfo": "",
+            "position": "22,5"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Sun Aug 22 2021 23:45:56",
+            "keyStrokeInfo": "",
+            "position": "22,1"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 1,
+            "keyStrokeTimeStamp": "Sun Aug 22 2021 23:45:57",
+            "keyStrokeInfo": "",
+            "position": "21,30"
+        },
+        {
+            "operation": "PASTE",
+            "lines": 1,
+            "keyStrokeTimeStamp": "Sun Aug 22 2021 23:45:58",
+            "keyStrokeInfo": "\r\n        ",
+            "position": "21,30"
+        },
+        {
+            "operation": "PASTE",
+            "lines": 1,
+            "keyStrokeTimeStamp": "Sun Aug 22 2021 23:45:59",
+            "keyStrokeInfo": "return self.preorder_print(self.root, \"\")",
+            "position": "22,9"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Sun Aug 22 2021 23:46:11",
+            "keyStrokeInfo": "",
+            "position": "29,12"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Sun Aug 22 2021 23:46:11",
+            "keyStrokeInfo": "",
+            "position": "29,11"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Sun Aug 22 2021 23:46:11",
+            "keyStrokeInfo": "",
+            "position": "29,10"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Sun Aug 22 2021 23:46:11",
+            "keyStrokeInfo": "",
+            "position": "29,9"
+        },
+        {
+            "operation": "PASTE",
+            "lines": 6,
+            "keyStrokeTimeStamp": "Sun Aug 22 2021 23:46:12",
+            "keyStrokeInfo": "if start:\r\n            if start.value == find_val:\r\n                return True\r\n            else:\r\n                return self.preorder_search(start.left, find_val) or self.preorder_search(start.right, find_val)\r\n        return False",
+            "position": "29,9"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Sun Aug 22 2021 23:46:29",
+            "keyStrokeInfo": "",
+            "position": "41,12"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Sun Aug 22 2021 23:46:29",
+            "keyStrokeInfo": "",
+            "position": "41,11"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Sun Aug 22 2021 23:46:29",
+            "keyStrokeInfo": "",
+            "position": "41,10"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Sun Aug 22 2021 23:46:29",
+            "keyStrokeInfo": "",
+            "position": "41,9"
+        },
+        {
+            "operation": "PASTE",
+            "lines": 5,
+            "keyStrokeTimeStamp": "Sun Aug 22 2021 23:46:30",
+            "keyStrokeInfo": "if start:\r\n            traversal += (str(start.value) + \"-\")\r\n            traversal = self.preorder_print(start.left, traversal)\r\n            traversal = self.preorder_print(start.right, traversal)\r\n        return traversal",
+            "position": "41,9"
+        }
+    ]
+}
