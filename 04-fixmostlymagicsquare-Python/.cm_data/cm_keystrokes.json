@@ -1,0 +1,60 @@
+{
+    "fixmostlymagicsquare.py": [
+        {
+            "operation": "TYPED",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Mon Aug 23 2021 12:54:05",
+            "keyStrokeInfo": "\r\n\t",
+            "position": "10,23"
+        },
+        {
+            "operation": "PASTE",
+            "lines": 69,
+            "keyStrokeTimeStamp": "Mon Aug 23 2021 12:54:06",
+            "keyStrokeInfo": "M=L\r\n    #row\r\n    sumofrow=[]\r\n    for i in range(len(M)):\r\n      sum=0\r\n      for j in range(len(M[0])):\r\n        sum+=M[i][j]\r\n      sumofrow.append(sum)\r\n    rows=sumofrow.count(sumofrow[0])==len(sumofrow)\r\n    print(sumofrow,len(sumofrow),rows)\r\n    if(rows):\r\n      #column\r\n      sumofcol=[]\r\n      for i in range(len(M[0])):\r\n        sum=0\r\n        for j in range(len(M)):\r\n          sum+=M[j][i]\r\n        sumofcol.append(sum)\r\n        \r\n      # print(sumofrow,sumofcol)\r\n      cols=sumofcol.count(sumofcol[0])==len(sumofcol)\r\n      if(cols):\r\n        #diagonal\r\n        d1=0\r\n        d2=0\r\n        for i in range(len(M)):\r\n          d1+=M[i][i]\r\n          d2+=M[i][-1-i]\r\n        if(d1!=d2):\r\n          return True\r\n    else:\r\n      rowdict=dict((i,sumofrow.count(i)) for i in sumofrow)\r\n      rwrong=min(rowdict,key=rowdict.get)\r\n      rcorrect=max(rowdict,key=rowdict.get)\r\n      diffr=rwrong-rcorrect\r\n      for i in range(len(sumofrow)):\r\n        if(sumofrow[i]==rwrong):\r\n          flag1=i\r\n      #column\r\n      sumofcol=[]\r\n      for i in range(len(M[0])):\r\n        sum=0\r\n        for j in range(len(M)):\r\n          sum+=M[j][i]\r\n        sumofcol.append(sum)\r\n        \r\n      # print(sumofrow,sumofcol)\r\n      cols=sumofcol.count(sumofcol[0])==len(sumofcol)\r\n      if(cols):\r\n        #diagonal\r\n        d1=0\r\n        d2=0\r\n        for i in range(len(M)):\r\n          d1+=M[i][i]\r\n          d2+=M[i][-1-i]\r\n        if(d1!=d2):\r\n          return True\r\n      else:\r\n        coldict=dict((i,sumofcol.count(i)) for i in sumofcol)\r\n        cwrong=min(coldict,key=rowdict.get)\r\n        ccorrect=max(coldict,key=rowdict.get)\r\n        diffc=cwrong-ccorrect\r\n        for i in range(len(sumofcol)):\r\n          if(sumofcol[i]==cwrong):\r\n            flag2=i\r\n        if(diffr==diffc):\r\n          M[flag1][flag2]=M[flag1][flag2]-diffr\r\n\r\n    return M",
+            "position": "11,2"
+        },
+        {
+            "operation": "TYPED",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Mon Aug 23 2021 12:54:16",
+            "keyStrokeInfo": "\r\n\t",
+            "position": "13,16"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 1,
+            "keyStrokeTimeStamp": "Mon Aug 23 2021 12:54:17",
+            "keyStrokeInfo": "",
+            "position": "14,2"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Mon Aug 23 2021 12:54:17",
+            "keyStrokeInfo": "",
+            "position": "14,2"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Mon Aug 23 2021 12:54:17",
+            "keyStrokeInfo": "",
+            "position": "14,2"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Mon Aug 23 2021 12:54:18",
+            "keyStrokeInfo": "",
+            "position": "14,2"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Mon Aug 23 2021 12:54:18",
+            "keyStrokeInfo": "",
+            "position": "14,2"
+        }
+    ]
+}
