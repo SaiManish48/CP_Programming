@@ -1,0 +1,81 @@
+{
+    "issorted.py": [
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Mon Aug 23 2021 10:56:57",
+            "keyStrokeInfo": "",
+            "position": "10,5"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Mon Aug 23 2021 10:56:57",
+            "keyStrokeInfo": "",
+            "position": "10,4"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Mon Aug 23 2021 10:56:58",
+            "keyStrokeInfo": "",
+            "position": "10,3"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Mon Aug 23 2021 10:56:58",
+            "keyStrokeInfo": "",
+            "position": "10,2"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Mon Aug 23 2021 10:56:58",
+            "keyStrokeInfo": "",
+            "position": "10,1"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 1,
+            "keyStrokeTimeStamp": "Mon Aug 23 2021 10:56:59",
+            "keyStrokeInfo": "",
+            "position": "9,23"
+        },
+        {
+            "operation": "TYPED",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Mon Aug 23 2021 10:56:59",
+            "keyStrokeInfo": "\r\n\t",
+            "position": "9,23"
+        },
+        {
+            "operation": "PASTE",
+            "lines": 23,
+            "keyStrokeTimeStamp": "Mon Aug 23 2021 10:57:09",
+            "keyStrokeInfo": "s=len(a)\r\n  \r\n  if(s==0 or s==1):\r\n    return True\r\n  \r\n  elif(a[-1]>=a[0]):\r\n    prev=a[0]\r\n    for i in range(1,len(a)):\r\n      if(prev>a[i]):\r\n        return False\r\n      prev=a[i]\r\n    return True\r\n  \r\n  elif(a[0]>=a[-1]):\r\n    final=a[-1]\r\n    for i in range(2,len(a)+1):\r\n      if(final>a[-i]):\r\n        return False\r\n      final=a[-i]\r\n    return True\r\n  \r\n  else:\r\n    return False",
+            "position": "10,2"
+        },
+        {
+            "operation": "PASTE",
+            "lines": 1,
+            "keyStrokeTimeStamp": "Mon Aug 23 2021 10:57:17",
+            "keyStrokeInfo": "\t",
+            "position": "32,1"
+        },
+        {
+            "operation": "PASTE",
+            "lines": 1,
+            "keyStrokeTimeStamp": "Mon Aug 23 2021 10:57:27",
+            "keyStrokeInfo": "\t\t\t",
+            "position": "28,1"
+        },
+        {
+            "operation": "PASTE",
+            "lines": 1,
+            "keyStrokeTimeStamp": "Mon Aug 23 2021 10:57:31",
+            "keyStrokeInfo": "\t\t\t",
+            "position": "20,1"
+        }
+    ]
+}
