@@ -5,4 +5,7 @@
 
 def canqueenattack(qR, qC, oR, oC):
 	# Your code goes here
-	pass
+	if((qR==oR) or (qC==oC) or ((qR-qC)==(oR-oC))):
+		return True
+	else:
+		return False
