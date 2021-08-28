@@ -9,6 +9,36 @@
 # Note: the autograder will grade each of the following functions, so they are required. 
 # However, they also are here specifically because they are just the right helper 
 # functions to make nthHappyNumber(n) easier to write!
+
+def sumOfSquaresOfDigits(n):
+    sum=0
+    while(n>0):
+        sum+=((n%10)**2)
+        n//=10
+    return sum
+
+def isprime(n):
+    if(n==2):
+        return True
+    if(n%2==0 or n<2):
+        return False
+    for i in range(3,round(n**0.5)+1,2):
+        if(n%i==0):
+            return False
+    return True
+    
 def ishappyprimenumber(n):
-    # Your code goes here
-    pass
+    if(isprime(n)==False):
+        return False
+    a=n
+    b=n
+    while(1):
+        a=sumOfSquaresOfDigits(a)
+        b=sumOfSquaresOfDigits(sumOfSquaresOfDigits(b))
+        if(a!=b):
+            continue
+        else:
+            break
+    if(a==1):
+        return True
+    return False
