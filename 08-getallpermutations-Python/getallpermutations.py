@@ -4,7 +4,7 @@
 
 def getallpermutations(x):
   if(len(x)==0):
-    return []
+        return []
   elif(len(x)==1):
     return x
   l=[]
