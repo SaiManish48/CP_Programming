@@ -15,8 +15,25 @@
 # string "None"). So, for example:
 
 def topScorer(data):
-    # Your code goes here...
-    return ""
+    if(data==''):
+        return None
+    temp=[]
+    maximum=0
+    d=data.splitlines()
+    k=d[0].split(",")
+    l=d[1].split(",")
+    temp.append(k)
+    temp.append(l)
+    for i in range(len(temp)):
+        sum=0
+        for j in range(1,len(temp[i])):
+            sum+=int(temp[i][j])
+        if(maximum<sum):
+            maximum=sum
+            s=temp[i][0]
+        elif(maximum==sum):
+            s=s+","+temp[i][0]
+    return s
 
 data = '''\
 Fred,10,20,30,40
